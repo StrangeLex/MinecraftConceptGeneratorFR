@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="UTF-8">
+  <head>
+  	<link rel="icon" href="data/minecraft_icon.png">
+  	<title>Minecraft Concept Generator</title>
+  </head>
+  
+
+  <p id="title">Loading...</p>
+
+  <button style="position:fixed;top:50%;left:49%;background-color:#761F71;border:none !important;width:140px;height:60px;text-decoration:none;display:inline-block;color:white;border-radius:10px;font-size:40px;font-family:'Burbank',serif;" onclick="ReloadTitle()">G&eacute;n&eacute;rer</button>
+
+  <h1>Minecraft Concept Generator <img style="position:relative;width:30px;height:24px;" src="data/france.png"></img></h1>
+  <button class="b" id="important" style="position:absolute;left:47%;Top:80%;max-height:30px;" onclick="window.open('https://github.com/wikili202', '_blank')"><img style="width:30px;height:30px;cursor:pointer;" src="data/github_icon.png"></img><p style="font-weight:bold;cursor:pointer;">wikili202</p></button>
+
+  <button class="b" id="important2" style="position:absolute;left:52%;Top:80%;max-height:30px;" onclick="window.open('https://twitch.tv/wikili202', '_blank')"><img style="width:30px;height:30px;cursor:pointer;" src="data/twitch_icon.png"></img><p style="font-weight:bold;cursor:pointer;">wikili202</p></button>
+
+  <button class="b" id="important3" style="position:absolute;left:57%;Top:80%;max-height:30px;" onclick="window.open('https://discord.gg/qfXHX9gaVn', '_blank')"><img style="width:30px;height:30px;cursor:pointer;" src="data/discord_icon.png"></img><p style="font-weight:bold;cursor:pointer;">wikili202</p></button>
+
+
+
+  <style>
+ body {
+  background-repeat:no-repeat;
+  background-image:url("data/bg.jpg");
+}
+
+#title {
+  color:black;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  max-width:1200px;
+  font-family:"Burbank",serif;
+  font-weight:bold;
+  font-size:60px;
+}
+
+h1 {
+	color:purple !important;
+	position: fixed;
+	top:70%;
+	left:40%;
+	font-size:60px;
+	font-weight:40px;
+	font-family: "Burbank", serif;
+
+}
+
+@font-face {
+ font-family: "Burbank";
+ src: url("Data/BurbankBigCondensed-Bold.otf") format("opentype");
+}
+
+
+.b {
+    background: transparent;
+    border: none !important;
+
+}
+
+</style>
+
+
+<script>
+
+var r_text = new Array ();
+r_text[0] = "je me transforme en mob toute les minutes";
+r_text[1] = "je reçois des dégâts toute les 2 minutes";
+r_text[2] = "mes touches gauche et Droite sont inverser en avancé et reculé";
+r_text[3] = "mon inventaire change toute les 30 secondes";
+r_text[4] = "je doit finir le jeu avec une épée en bois";
+r_text[5] = "je doit tuer le weather avec du stuff en cuir et épée en pierre";
+r_text[6] = "je doit finir le jeu en n'enchantent rien";
+r_text[7] = "je me bat qu'avec mes poings";
+r_text[8] = "l'eau me brule";
+r_text[9] = "la Gravité est inverser";
+r_text[10] = "avec des Mods WTF";
+r_text[11] = "les animaux m'attaquent";
+r_text[12] = "je peux fly";
+r_text[13] = "avec 5 Dimensions";
+r_text[14] = "sur RLCraft";
+r_text[15] = "avec MumbleLink";
+r_text[16] = "sans concept";
+r_text[17] = "les coffres sont des mobs";
+r_text[19] = "si je meurt, le monde ce supprime";
+r_text[20] = "la bordure augmente de 1/block a chaque niveau de gagner";
+r_text[21] = "avec Blindness";
+r_text[22] = "avec Nausea";
+r_text[23] = "avec les Super Secret Settings";
+r_text[24] = "les mlg régénèrent 1 Coeur / 10 blocks tomber";
+r_text[25] = "les minerais peuvent exploser";
+r_text[26] = "la nature reprend ses droits";
+r_text[27] = "sans Ninjaxx";
+r_text[28] = "en Moonwalk";
+r_text[29] = "Avec 3 slots maximum";
+r_text[30] = "Les mobs me vois à travers les murs";
+
+
+var i = Math.floor(31*Math.random())
+
+document.getElementById("title").innerHTML = "Minecraft mais " + r_text[i] + '.';
+
+
+function ReloadTitle() {
+	var i = Math.floor(31*Math.random())
+	document.getElementById("title").innerHTML = "Minecraft mais " + r_text[i] + '.';
+}
+
+
+var aDiv = document.getElementById("important")
+var bDiv = document.getElementById("important2")
+var cDiv = document.getElementById("important3")
+
+var element = document.getElementById("title");
+
+if (aDiv) {
+}
+else {
+	element.parentNode.removeChild(element);
+}
+
+if (bDiv) {
+}
+else {
+	element.parentNode.removeChild(element);
+}
+
+if (cDiv) {
+}
+else {
+	element.parentNode.removeChild(element);
+}
+
+
+
+</script>

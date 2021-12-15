@@ -1,0 +1,38 @@
+ body {
+  background-repeat:no-repeat;
+  background-image:url("data/bg.jpg");
+}
+
+#title {
+  color:black;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  max-width:1200px;
+  font-family:"Burbank",serif;
+  font-weight:bold;
+  font-size:60px;
+}
+
+h1 {
+	color:purple !important;
+	position: fixed;
+	top:70%;
+	left:40%;
+	font-size:60px;
+	font-weight:40px;
+	font-family: "Burbank", serif;
+
+}
+
+@font-face {
+ font-family: "Burbank";
+ src: url("Data/BurbankBigCondensed-Bold.otf") format("opentype");
+}
+
+
+.b {
+    background: transparent;
+    border: none !important;
+
+}
